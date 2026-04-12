@@ -16,8 +16,12 @@ class Journal < Formula
   end
 
   def install
-    libexec.install "journal", "web"
-    bin.install_symlink libexec/"journal"
+    libexec.install "journal" => "journal-bin", "web"
+    (bin/"journal").write <<~EOS
+      #!/bin/sh
+      cd #{libexec}
+      exec #{libexec}/journal-bin "$@"
+    EOS
   end
 
   test do
