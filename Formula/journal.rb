@@ -16,12 +16,9 @@ class Journal < Formula
   end
 
   def install
-    libexec.install "journal" => "journal-bin", "web"
-    (bin/"journal").write <<~EOS
-      #!/bin/sh
-      cd #{libexec}
-      exec #{libexec}/journal-bin "$@"
-    EOS
+    libexec.install "journal" => "journal-bin"
+    libexec.install "web"
+    (bin/"journal").write "#!/bin/sh\ncd \"#{libexec}\"\nexec \"#{libexec}/journal-bin\" \"$@\"\n"
   end
 
   test do
