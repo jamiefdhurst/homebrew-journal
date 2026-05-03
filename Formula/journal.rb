@@ -5,19 +5,19 @@
 class Journal < Formula
   desc "Simple blog available as an api, written in go with accompanying tests and doc"
   homepage "https://github.com/jamiefdhurst/journal"
-  url "https://github.com/jamiefdhurst/journal/archive/refs/tags/1.0.1.tar.gz"
-  sha256 "6e9f768d9251795f6b027d26a545cc26d2159b70581dc5145b74b4b9ceefa060"
+  url "https://github.com/jamiefdhurst/journal/archive/refs/tags/1.0.2.tar.gz"
+  sha256 "13e075fe5f25f36a5933370d37e8e2c90bd041b9d56fc4d26d58379b6ca95ab1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/jamiefdhurst/journal/releases/download/1.0.1/journal-1.0.1-darwin-amd64.tar.gz"
-      sha256 "99f6756170299b5636566d4f426d713dcd1ecea834bbba74b70d28e02d300713"
+      url "https://github.com/jamiefdhurst/journal/releases/download/1.0.2/journal-1.0.2-darwin-amd64.tar.gz"
+      sha256 "332e3803a5cbdc079d7379c72fc35e68858e42b53ab4390276924ce4255c0738"
     end
 
     on_arm do
-      url "https://github.com/jamiefdhurst/journal/releases/download/1.0.1/journal-1.0.1-darwin-arm64.tar.gz"
-      sha256 "09f0721c6782ae5f9ad8e951965c31e1d3131e4e842f3156c7aa3953fe13b940"
+      url "https://github.com/jamiefdhurst/journal/releases/download/1.0.2/journal-1.0.2-darwin-arm64.tar.gz"
+      sha256 "78bfa9ceb4d02dc3d21e61cb20eba1f6c391bf5f1b74163f6b50f61b73b0c2af"
     end
   end
 
